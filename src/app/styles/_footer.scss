@@ -1,0 +1,11 @@
+.Footer {
+    background-color: #fff !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -2;;
+    .footer-brand {
+        padding: 2em 6.5em 3em 0em;
+    }
+}
