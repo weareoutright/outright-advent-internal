@@ -1,11 +1,17 @@
 .Footer {
-    background-color: #fff !important;
+    background-image: url("../images/snow.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100svw;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    z-index: -2;;
+    position: fixed;
+    bottom: 0;
+    object-fit: fill;
     .footer-brand {
-        padding: 2em 6.5em 3em 0em;
+        padding: 7em 6.5em 3em 0em;
     }
 }

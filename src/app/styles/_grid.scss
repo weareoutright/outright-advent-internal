@@ -1,15 +1,14 @@
 .Grid {
-    background-image: url("../images/snow.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    padding: 5em 5em .5em 5em;
+    padding: 5em 5em 8em 5em;
+    margin: 0 auto;
+    background-color: transparent;
     .parent {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-        height: 150svh;
+        height: 230svh;
         padding: 1.5em;
 
         .box {

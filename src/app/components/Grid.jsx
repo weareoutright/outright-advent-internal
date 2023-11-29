@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import LOGO_ORNAMENT from "../images/logo-ornament.svg"
-import SNOW from "../images/snow.svg"
 
 const Grid = () => {
   return (
