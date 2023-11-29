@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import SNOW from "../images/snow.svg"
+import SNOW from "../images/snow/snow.svg"
 
 const Snow = () => {
   return (
