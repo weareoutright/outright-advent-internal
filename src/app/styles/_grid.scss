@@ -2,6 +2,7 @@
     padding: 5em 5em 8em 5em;
     margin: 0 auto;
     background-color: transparent;
+    max-width: 80svw;
     .parent {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
