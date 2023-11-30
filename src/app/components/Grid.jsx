@@ -8,7 +8,7 @@ const Grid = () => {
   return (
     <div className="Grid">
         <div className="parent">
-                <div className="div1"><Image src={LOGO_ORNAMENT}></Image></div>
+                <div className="div1"><Image src={LOGO_ORNAMENT} alt=""></Image></div>
                 {
                     RESOURCES.map((resource) => {
                         return <Resource 

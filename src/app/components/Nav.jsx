@@ -1,14 +1,22 @@
-import React from 'react'
+'use client'
+
+import React, {useEffect, useState} from 'react'
+import Countdown from 'react-countdown-simple'
 
 const Nav = () => {
+  const COUNTDOWN_END = new Date("12/20/2023, 9:00:00 AM");
+
+  const renderer = ({ days, hours, minutes, seconds }) =>
+  <div className="timer">
+    <p>{days} days</p>
+    <p>{hours} hours</p>
+    <p>{minutes} mins</p>
+    <p>{seconds} sec</p>
+    </div>
+
   return (
     <nav className='Nav'>
-      <div className="timer">
-          <p className="daysLeft">03 days</p>
-          <p className="hoursLeft">04 hours</p>
-          <p className="minsLeft">46 min</p>
-          <p className="secondsLeft">23 sec</p>
-      </div>
+      <Countdown targetDate={COUNTDOWN_END} renderer={renderer}/>
     </nav>
   )
 }

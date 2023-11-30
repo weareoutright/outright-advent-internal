@@ -3,13 +3,17 @@
     top: 0;
     background-color: $lightPink;
     width: 100svw;
-    padding: .75em;
-    .timer {
-        display: flex;
+    padding: .75em; 
+    .react-countdown-simple {
+        display: flex; 
         justify-content: center;
-        align-items: center;
-        p {
-            margin: .25em 1em;
+        .timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                margin: .25em 1em;
+            }
         }
     }
 }

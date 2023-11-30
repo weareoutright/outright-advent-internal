@@ -5,7 +5,7 @@ import SNOW from "../images/snow/snow.svg"
 const Snow = () => {
   return (
     <div className="Snow">
-        <Image src={SNOW}></Image>
+        <Image src={SNOW} alt=""></Image>
         <div className="extra-snow"><span></span></div>
     </div>
   )
