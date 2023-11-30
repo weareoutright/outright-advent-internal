@@ -23,6 +23,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
         onClick={() => {
           getAlert();
           event.preventDefault()
+          return false;
         }}
         >
           <span>{id-1}</span>
