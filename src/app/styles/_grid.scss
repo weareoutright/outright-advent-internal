@@ -15,7 +15,7 @@
             border: 1px solid #fff;
             border-radius: 18px;
             padding: .65em;
-            font-size: 1.5em;
+            font-size: 1.25em;
             font-weight: 700;
             background-color: $pink;
             background-repeat: no-repeat;
@@ -54,6 +54,7 @@
         .covered {
             background-image: none !important;
             background-color: $pink;
+            cursor: default;
             span {
                 color: $blue !important;
             }

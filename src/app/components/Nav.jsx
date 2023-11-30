@@ -1,10 +1,13 @@
 'use client'
 
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Countdown from 'react-countdown-simple'
+import { RESOURCES } from '../constants/resourceInfo'
 
 const Nav = () => {
-  const COUNTDOWN_END = new Date("12/20/2023, 9:00:00 AM");
+  const now = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
+  const nextResource = RESOURCES.find((resource) => resource.releaseDate >= now).releaseDate
+  const nextResourceReveal = new Date(nextResource)
 
   const renderer = ({ days, hours, minutes, seconds }) =>
   <div className="timer">
@@ -16,7 +19,7 @@ const Nav = () => {
 
   return (
     <nav className='Nav'>
-      <Countdown targetDate={COUNTDOWN_END} renderer={renderer}/>
+      <Countdown targetDate={nextResourceReveal} renderer={renderer}/>
     </nav>
   )
 }
