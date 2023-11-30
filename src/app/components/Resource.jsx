@@ -11,7 +11,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
   return (
         <Link 
         className={`div${id} box ${orientation} ${makeActive ? "active" : "covered"}`}
-        href={makeActive ? href : "javascript:void(0)"} 
+        href={makeActive ? href : ""} 
         alt={`link to ${title}`}
         style={makeActive ? {} : {"border": "1px solid #fff"}} 
         aria-disabled={makeActive ? false : true} 
