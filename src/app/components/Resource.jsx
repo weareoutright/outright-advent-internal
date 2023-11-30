@@ -10,6 +10,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
 
     const getAlert = () => {
       alert(CLICK_ALERTS[Math.floor(Math.random() * CLICK_ALERTS.length)]);
+      return false;
     }
 
   return (
