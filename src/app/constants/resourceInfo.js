@@ -27,7 +27,7 @@ export const RESOURCES = [
     resourceImg: day1,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/1/2023, 9:00:00 AM",
+    releaseDate: "11/1/2023, 9:00:00 AM",
   },
   {
     id: 3,

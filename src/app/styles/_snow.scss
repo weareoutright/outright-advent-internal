@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 100svw;
     img {
-        width: 100%;
+        width: 155%;
         object-fit: cover;
         padding-top: -2em;
         height: 100%;
@@ -14,6 +14,6 @@
     .extra-snow {
         background-color: #fff !important;
         margin-top: -1em;
-        height: 5em; // this will be an inline style that grows over time according to the timer and/or day
+        height: .5em; // this will be an inline style that grows over time according to the timer and/or day
     }
 }
