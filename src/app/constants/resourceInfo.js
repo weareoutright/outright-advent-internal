@@ -1,6 +1,5 @@
 import day1 from "../images/resource-thumbnails/day1.svg";
-// import day2 from "../images/resource-thumbnails/day2.svg";
-import day2placeholder from "../images/resource-thumbnails/day2placeholder.svg";
+import day2 from "../images/resource-thumbnails/day2.svg";
 import day3 from "../images/resource-thumbnails/day3.svg";
 import day4 from "../images/resource-thumbnails/day4.svg";
 import day5 from "../images/resource-thumbnails/day5.svg";
@@ -34,7 +33,7 @@ export const RESOURCES = [
     id: 3,
     title: "httpster",
     href: "https://httpster.net/",
-    resourceImg: day2placeholder,
+    resourceImg: day2,
     coverImg: singleGridCover,
     orientation: "single",
     releaseDate: "12/4/2023, 9:00:00 AM",

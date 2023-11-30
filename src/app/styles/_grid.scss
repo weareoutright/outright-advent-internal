@@ -1,5 +1,5 @@
 .Grid {
-    padding: 5em 5em 10em 5em;
+    padding: 5em 5em 7.5em 5em;
     margin: 0 auto;
     background-color: transparent;
     max-width: 90svw;
@@ -9,7 +9,6 @@
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-        height: 240svh;
         padding: 1.5em;
 
         .box {
@@ -22,11 +21,11 @@
             background-color: $pink;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
         }
 
         .single, .horizontal, .vertical {
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .div2, .div8, .div13 {
@@ -49,24 +48,18 @@
             background-image: url("../images/resource-covers/single-grid-resource-cover.svg") !important;
             background-size: cover;
             background-color: $pink;
-            border-left: none;
-            border-right: none;
         }
 
         .div4.covered, .div11.covered, .div13.covered {
             background-image: url("../images/resource-covers/vertical-resource-cover.svg") !important;
             background-size: cover;
             background-color: $pink;
-            border-left: none;
-            border-right: none;
         }
 
         .div6.covered, .div7.covered, .div12.covered, .div14.covered {
             background-image: url("../images/resource-covers/horizontal-resource-cover.svg") !important;
             background-size: cover;
             background-color: $pink;
-            border-left: none;
-            border-right: none;
         }
 
 
@@ -85,7 +78,7 @@
             }
 
         .div3 { grid-area: 1 / 3 / 2 / 4; 
-            background-image: url("../images/resource-thumbnails/day2placeholder.svg");
+            background-image: url("../images/resource-thumbnails/day2.svg");
         }
         .div4 { grid-area: 1 / 4 / 3 / 5; 
             background-image: url("../images/resource-thumbnails/day3.svg");
