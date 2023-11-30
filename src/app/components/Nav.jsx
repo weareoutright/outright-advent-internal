@@ -19,7 +19,9 @@ const Nav = () => {
 
   return (
     <nav className='Nav'>
+      <p>✨ 🎁 </p>
       <Countdown targetDate={nextResourceReveal} renderer={renderer}/>
+      <p> 🎁 ✨</p>
     </nav>
   )
 }

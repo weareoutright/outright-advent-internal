@@ -5,6 +5,11 @@
     width: 100svw;
     padding: .75em; 
     font-family: $main-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
     .react-countdown-simple {
         display: flex; 
         justify-content: center;
