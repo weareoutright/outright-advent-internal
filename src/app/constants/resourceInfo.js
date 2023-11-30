@@ -19,9 +19,6 @@ import singleGridCover from "../images/resource-covers/single-grid-resource-cove
 import horizontalGridCover from "../images/resource-covers/horizontal-resource-cover.svg";
 import verticalGridCover from "../images/resource-covers/vertical-resource-cover.svg";
 
-export const PATIENCE_URL =
-  "https://www.google.com/search?q=patience+definition&sca_esv=586707143&ei=kONoZdv1D9rzkPIP55i78Aw&ved=0ahUKEwjb_d_Su-yCAxXaOUQIHWfMDs4Q4dUDCBA&uact=5&oq=patience+definition&gs_lp=Egxnd3Mtd2l6LXNlcnAiE3BhdGllbmNlIGRlZmluaXRpb24yChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyChAAGEcY1gQYsAMyDRAAGIAEGIoFGLADGEMyDRAAGIAEGIoFGLADGEMyDRAAGIAEGIoFGLADGENInxtQxQlY1hdwA3gBkAEAmAGNAaAB2wGqAQMxLjG4AQPIAQD4AQHCAgYQABgHGB7iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp";
-
 export const RESOURCES = [
   {
     id: 2,
