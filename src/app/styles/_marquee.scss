@@ -1,0 +1,15 @@
+.Marquee {
+    position: fixed;
+    top: 0;
+    background-color: $darkPink;
+    width: 100svw;
+    padding: .75em;
+    .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: .25em 1em;
+        }
+    }
+}
