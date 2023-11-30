@@ -27,7 +27,7 @@ export const RESOURCES = [
     resourceImg: day1,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/1/2023, 9:00:00 AM",
+    releaseDate: "12/4/2023, 9:00:00 AM",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const RESOURCES = [
     resourceImg: day2,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/4/2023, 9:00:00 AM",
+    releaseDate: "12/5/2023, 9:00:00 AM",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const RESOURCES = [
     resourceImg: day3,
     coverImg: verticalGridCover,
     orientation: "vertical",
-    releaseDate: "12/5/2023, 9:00:00 AM",
+    releaseDate: "12/6/2023, 9:00:00 AM",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const RESOURCES = [
     resourceImg: day4,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/6/2023, 9:00:00 AM",
+    releaseDate: "12/7/2023, 9:00:00 AM",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const RESOURCES = [
     resourceImg: day5,
     coverImg: horizontalGridCover,
     orientation: "horizontal",
-    releaseDate: "12/7/2023, 9:00:00 AM",
+    releaseDate: "12/8/2023, 9:00:00 AM",
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ export const RESOURCES = [
     resourceImg: day6,
     coverImg: horizontalGridCover,
     orientation: "horizontal",
-    releaseDate: "12/8/2023, 9:00:00 AM",
+    releaseDate: "12/11/2023, 9:00:00 AM",
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ export const RESOURCES = [
     resourceImg: day7,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/10/2023, 9:00:00 AM",
+    releaseDate: "12/12/2023, 9:00:00 AM",
   },
   {
     id: 9,
@@ -90,7 +90,7 @@ export const RESOURCES = [
     resourceImg: day8,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/11/2023, 9:00:00 AM",
+    releaseDate: "12/13/2023, 9:00:00 AM",
   },
   {
     id: 10,
@@ -99,7 +99,7 @@ export const RESOURCES = [
     resourceImg: day9,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/12/2023, 9:00:00 AM",
+    releaseDate: "12/14/2023, 9:00:00 AM",
   },
   {
     id: 11,
@@ -108,7 +108,7 @@ export const RESOURCES = [
     resourceImg: day10,
     coverImg: verticalGridCover,
     orientation: "vertical",
-    releaseDate: "12/12/2023, 9:00:00 AM",
+    releaseDate: "12/15/2023, 9:00:00 AM",
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const RESOURCES = [
     resourceImg: day11,
     coverImg: horizontalGridCover,
     orientation: "horizontal",
-    releaseDate: "12/14/2023, 9:00:00 AM",
+    releaseDate: "12/17/2023, 9:00:00 AM",
   },
   {
     id: 13,
@@ -126,7 +126,7 @@ export const RESOURCES = [
     resourceImg: day12,
     coverImg: verticalGridCover,
     orientation: "vertical",
-    releaseDate: "12/15/2023, 9:00:00 AM",
+    releaseDate: "12/18/2023, 9:00:00 AM",
   },
   {
     id: 14,
@@ -135,7 +135,7 @@ export const RESOURCES = [
     resourceImg: day13,
     coverImg: horizontalGridCover,
     orientation: "horizontal",
-    releaseDate: "12/17/2023, 9:00:00 AM",
+    releaseDate: "12/19/2023, 9:00:00 AM",
   },
   {
     id: 15,
@@ -144,7 +144,7 @@ export const RESOURCES = [
     resourceImg: day14,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/18/2023, 9:00:00 AM",
+    releaseDate: "12/20/2023, 9:00:00 AM",
   },
   {
     id: 16,
@@ -153,7 +153,7 @@ export const RESOURCES = [
     resourceImg: day15,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/19/2023, 9:00:00 AM",
+    releaseDate: "12/21/2023, 9:00:00 AM",
   },
   {
     id: 17,
@@ -162,6 +162,6 @@ export const RESOURCES = [
     resourceImg: day16,
     coverImg: singleGridCover,
     orientation: "single",
-    releaseDate: "12/20/2023, 9:00:00 AM",
+    releaseDate: "12/22/2023, 9:00:00 AM",
   },
 ];
