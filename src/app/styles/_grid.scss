@@ -1,9 +1,8 @@
 .Grid {
-    padding: 0em 5em 8em 5em;
+    padding: 5em 5em 8em 5em;
     margin: 0 auto;
     background-color: transparent;
     max-width: 90svw;
-    scale: 90%;
     .parent {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -21,10 +20,29 @@
             font-size: 1.5em;
             font-weight: 700;
             background-color: $pink;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
 
         .single, .horizontal, .vertical {
             object-fit: cover;
+        }
+
+        .div2, .div8, .div13 {
+            background-color: $orange;
+        }
+
+        .div3, .div7, .div9, .div14, .div15 {
+            background-color: $lightPink;
+        }
+
+        .div4, .div5, .div10, .div12, .div16 {
+            background-color: $orangePink;
+        }
+
+        .div6, .div11, .div17 {
+            background-color: $darkPink;
         }
 
         .div1 { 
@@ -39,84 +57,51 @@
         }
         .div2 { grid-area: 1 / 2 / 2 / 3; 
             background-image: url("../images/resource-thumbnails/day1.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
             }
         .div3 { grid-area: 1 / 3 / 2 / 4; 
             background-image: url("../images/resource-thumbnails/day2placeholder.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div4 { grid-area: 1 / 4 / 3 / 5; 
             background-image: url("../images/resource-thumbnails/day3.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div5 { grid-area: 2 / 1 / 3 / 2; 
             background-image: url("../images/resource-thumbnails/day4.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div6 { grid-area: 2 / 2 / 3 / 4; 
             background-image: url("../images/resource-thumbnails/day5.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div7 { grid-area: 3 / 1 / 4 / 3; 
             background-image: url("../images/resource-thumbnails/day6.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div8 { grid-area: 3 / 3 / 4 / 4; 
             background-image: url("../images/resource-thumbnails/day7.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div9 { grid-area: 3 / 4 / 4 / 5; 
             background-image: url("../images/resource-thumbnails/day8.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div10 { grid-area: 4 / 1 / 5 / 2; 
             background-image: url("../images/resource-thumbnails/day9.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div11 { grid-area: 4 / 2 / 6 / 3; 
             background-image: url("../images/resource-thumbnails/day10.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div12 { grid-area: 4 / 3 / 5 / 5; 
             background-image: url("../images/resource-thumbnails/day11.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div13 { grid-area: 5 / 1 / 7 / 2; 
             background-image: url("../images/resource-thumbnails/day12.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div14 { grid-area: 5 / 3 / 6 / 5; 
             background-image: url("../images/resource-thumbnails/day13.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+        }
         .div15 { grid-area: 6 / 2 / 7 / 3; 
             background-image: url("../images/resource-thumbnails/day14.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+            }
         .div16 { grid-area: 6 / 3 / 7 / 4; 
             background-image: url("../images/resource-thumbnails/day15.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+            }
         .div17 { grid-area: 6 / 4 / 7 / 5; 
             background-image: url("../images/resource-thumbnails/day16.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+            }
         }
     }
