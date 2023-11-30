@@ -8,7 +8,8 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
     const today = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
     const makeActive = today >= releaseDate;
 
-    const getAlert = () => {
+    const getAlert = (e) => {
+      e.preventDefault();
       alert(CLICK_ALERTS[Math.floor(Math.random() * CLICK_ALERTS.length)]);
       return false;
     }
@@ -20,10 +21,8 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
         alt={`link to ${title}`}
         style={makeActive ? {} : {"border": "1px solid #fff"}} 
         aria-disabled={makeActive ? false : true} 
-        onClick={() => {
-          getAlert();
-          event.preventDefault()
-          return false;
+        onClick={(e) => {
+          getAlert(e);return false;
         }}
         >
           <span>{id-1}</span>
