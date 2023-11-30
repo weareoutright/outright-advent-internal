@@ -10,7 +10,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
     console.log(resourceImg)
 
   return (
-        <Link className={`div${id} box ${orientation} covered`} href={href} target='_blank' rel='noreferrer' alt={`link to ${title}`}>
+        <Link className={`div${id} box ${orientation} ${currentDate >= releaseDate ? "" : "covered"}`} href={href} target='_blank' rel='noreferrer' alt={`link to ${title}`}>
         </Link>
   )
 }
