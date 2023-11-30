@@ -8,6 +8,10 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
     const today = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
     const makeActive = today >= releaseDate;
 
+    const getAlert = () => {
+      alert(CLICK_ALERTS[Math.floor(Math.random() * CLICK_ALERTS.length)]);
+    }
+
   return (
         <Link 
         className={`div${id} box ${orientation} ${makeActive ? "active" : "covered"}`}
@@ -15,7 +19,10 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
         alt={`link to ${title}`}
         style={makeActive ? {} : {"border": "1px solid #fff"}} 
         aria-disabled={makeActive ? false : true} 
-        onClick={() => alert(CLICK_ALERTS[Math.floor(Math.random() * CLICK_ALERTS.length)])}
+        onClick={() => {
+          getAlert();
+          event.preventDefault()
+        }}
         >
           <span>{id-1}</span>
         </Link>
