@@ -20,7 +20,11 @@
   
   body {
     background-color: $pink;
-
+    background-image: url("../images/snow/snowflake-bg.svg");
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    //
   }
   
   a {
