@@ -63,18 +63,24 @@
         .div2.covered:hover, .div3.covered:hover, .div5.covered:hover, .div9.covered:hover, .div10.covered:hover, .div15.covered:hover, .div16.covered:hover, .div17.covered:hover, .div8.covered:hover {
             background-image: url("../images/resource-covers/single-grid-resource-cover.svg") !important;
             background-size: cover;
+            border-top: none !important;
+            border-bottom: none !important;
         }
 
         .div4.covered:hover, .div11.covered:hover, .div13.covered:hover {
             background-image: url("../images/resource-covers/vertical-resource-cover.svg") !important;
             background-size: cover;
             background-color: $pink;
+            border-top: none !important;
+            border-bottom: none !important;
         }
 
         .div6.covered:hover, .div7.covered:hover, .div12.covered:hover, .div14.covered:hover {
             background-image: url("../images/resource-covers/horizontal-resource-cover.svg") !important;
             background-size: cover;
             background-color: $pink;
+            border-top: none !important;
+            border-bottom: none !important;
         }
 
 
