@@ -18,10 +18,12 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
         <Link 
         className={`div${id} box ${orientation} ${makeActive ? "active" : "covered"}`}
         href={makeActive ? href : ""} 
+        target='_blank'
+        rel="noreferrer"
         alt={`link to ${title}`}
         style={makeActive ? {} : {"border": "1px solid #fff"}} 
         aria-disabled={makeActive ? false : true} 
-        onClick={(e) => {
+        onClick={makeActive ? console.log("This resource is active") : (e) => {
           getAlert(e);return false;
         }}
         >
