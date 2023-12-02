@@ -1,6 +1,4 @@
 .Nav {
-    position: fixed;
-    top: 0;
     background-color: $lightPink;
     width: 100svw;
     padding: .75em; 
@@ -17,9 +15,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: $blue;
             p {
                 margin: .25em 1em;
             }
         }
     }
+
+}
+
+.end-of-advent {
+    background-color: $darkPink !important;
 }

@@ -4,7 +4,7 @@ import React from 'react'
 import Countdown from 'react-countdown-simple'
 import { RESOURCES } from '../constants/resourceInfo'
 
-const Nav = () => {
+const Nav = ({endOfAdvent}) => {
   const now = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
   const nextResource = RESOURCES.find((resource) => resource.releaseDate >= now).releaseDate
   const nextResourceReveal = new Date(nextResource)
@@ -18,11 +18,20 @@ const Nav = () => {
     </div>
 
   return (
-    <nav className='Nav'>
-      <p>✨ 🎁  </p>
-      <Countdown targetDate={nextResourceReveal} renderer={renderer}/>
-      <p>  🎁 ✨</p>
-    </nav>
+    <>
+      {
+        now >= endOfAdvent ? 
+        <nav className='Nav end-of-advent'>
+          <p>🎁 Happy holidays and cheers to 2023! 🎉</p> 
+        </nav> 
+        : 
+        <nav className='Nav'>
+          <p>✨ 🎁  </p>
+          <Countdown targetDate={nextResourceReveal} renderer={renderer}/>
+          <p>  🎁 ✨</p>
+        </nav>  
+      }
+    </>
   )
 }
 

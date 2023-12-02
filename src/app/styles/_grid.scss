@@ -1,5 +1,5 @@
 .Grid {
-    padding: 5em 5em 7.5em 5em;
+    padding: 2em 5em 7.5em 5em;
     margin: 0 auto;
     background-color: transparent;
     max-width: 70svw;
@@ -21,6 +21,12 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box:hover {
+                cursor: url('../Cursors_Wreath.png'), auto;
         }
 
         .single, .horizontal, .vertical {
@@ -45,10 +51,6 @@
 
         .active {
             border: none;
-            span {
-                color: #fff !important;
-
-            }
         }
 
         .covered {
@@ -144,4 +146,12 @@
             background-image: url("../images/resource-thumbnails/day16.svg");
             }
         }
+    }
+
+    .light-num {
+        color: #fff !important;
+    }
+
+    .dark-num {
+        color: $blue !important;
     }
