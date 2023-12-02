@@ -5,8 +5,8 @@ import LOGO from "../images/logo-ornament.svg";
 import Image from "next/image";
 
 export const MARQUEE_MSGS = [
-  <Image src={STAR} alt="" />,
-  <Image src={OUTRIGHT} alt="" />,
-  <Image src={SNOWFLAKE} height={32} width={32} alt="" />,
-  <Image src={LOGO} height={32} width={32} alt="" />,
+  <Image src={STAR} alt="" key="star" />,
+  <Image src={OUTRIGHT} alt="" key="outright" />,
+  <Image src={SNOWFLAKE} height={32} width={32} alt="" key="snowflake" />,
+  <Image src={LOGO} height={32} width={32} alt="" key="logo" />,
 ];
