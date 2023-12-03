@@ -22,7 +22,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
     }
 
     const today = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
-    const makeActive = today > releaseDate;
+    const makeActive = today.valueOf() > new Date(releaseDate).valueOf();
 
     const getAlert = (e) => {
       e.preventDefault();
