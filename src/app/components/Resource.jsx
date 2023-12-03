@@ -21,8 +21,8 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
       if (WHITE_ARROW_DIV.includes(div_id)) return "light-num";
     }
 
-    const today = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
-    const makeActive = today.valueOf() < new Date(releaseDate).valueOf();
+    const today = new Date(Date.now())
+    const makeActive = today.valueOf() > new Date(releaseDate).valueOf();
 
     const getAlert = (e) => {
       e.preventDefault();
