@@ -46,7 +46,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
         }}
         >
           <span className={getNumColor(id)}>{id-1}</span>
-          {makeActive ? <Image src={() => getArrow(id)} alt=""/> : ""}
+          {makeActive ? <Image src={getArrow(id)} alt=""/> : ""}
         </Link>
   )
 }
