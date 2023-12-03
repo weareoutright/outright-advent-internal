@@ -29,7 +29,7 @@ export const RESOURCES = [
     orientation: "single",
     releaseDate: "12/1/2023, 3:00:00 PM",
   },
-  {
+ {
     id: 3,
     title: "httpster",
     href: "https://httpster.net/",
@@ -38,7 +38,7 @@ export const RESOURCES = [
     orientation: "single",
     releaseDate: "12/4/2023, 9:00:00 AM",
   },
-  {
+  /*{
     id: 4,
     title: "shape-factory",
     href: "https://shapefactory.co/",
@@ -164,4 +164,5 @@ export const RESOURCES = [
     orientation: "single",
     releaseDate: "12/22/2023, 9:00:00 AM",
   },
+  */
 ];
