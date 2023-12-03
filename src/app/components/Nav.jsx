@@ -5,9 +5,9 @@ import Countdown from 'react-countdown-simple'
 import { RESOURCES } from '../constants/resourceInfo'
 
 const Nav = ({endOfAdvent}) => {
-  const now = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
+  const now = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'}).valueOf()
   const nextResource = RESOURCES.find((resource) => resource.releaseDate >= now).releaseDate
-  const nextResourceReveal = new Date(nextResource)
+  const nextResourceReveal = new Date(nextResource).valueOf()
 
   const renderer = ({ days, hours, minutes, seconds }) =>
   <div className="timer">

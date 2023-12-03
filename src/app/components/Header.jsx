@@ -7,9 +7,9 @@ import Snowfall from "react-snowfall"
 import { MARQUEE_MSGS } from '../constants/marqueeMsgs'
 
 const Header = () => {
-    const now = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
-    const endOfAdvent = "12/22/2023, 9:00:00 AM"
-    const snowStart = "12/11/2023, 12:00:00 AM"
+    const now = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'}).valueOf()
+    const endOfAdvent = new Date("12/22/2023, 9:00:00 AM").valueOf()
+    const snowStart = new Date("12/11/2023, 12:00:00 AM").valueOf()
 
   return (
     <div className='Header'>
