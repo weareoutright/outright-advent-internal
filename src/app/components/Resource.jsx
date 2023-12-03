@@ -41,7 +41,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
         alt={`link to ${title}`}
         style={makeActive ? {} : {"border": "1px solid #fff"}} 
         aria-disabled={makeActive ? false : true} 
-        onClick={makeActive ? console.log("This resource is active") : (e) => {
+        onClick={makeActive ? () => console.log("This resource is active") : (e) => {
           getAlert(e);return false;
         }}
         >
