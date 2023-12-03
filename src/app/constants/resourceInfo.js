@@ -33,7 +33,7 @@ export const RESOURCES = [
     id: 3,
     title: "httpster",
     href: "https://httpster.net/",
-    resourceImg: day2,
+    resourceImg: "",
     coverImg: singleGridCover,
     orientation: "single",
     releaseDate: "12/4/2023, 9:00:00 AM",
