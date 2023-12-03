@@ -32,7 +32,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
 
   return (
         <Link 
-        className={`div${id} box ${orientation} 
+        className={`div${id} box ${orientation} covered
             /* ${makeActive ? "active" : "covered"} */
             `}
         href={makeActive ? href : ""} 
