@@ -21,8 +21,8 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
       if (WHITE_ARROW_DIV.includes(div_id)) return "light-num";
     }
 
-    const today = new Date(Date.now()).toLocaleString('en-us', {timeZone: 'America/New_York'})
-    const makeActive = today >= releaseDate;
+    const today = new Date(Date.now())
+    const makeActive = today.valueOf() > new Date(releaseDate).valueOf();
 
     const getAlert = (e) => {
       e.preventDefault();
@@ -32,14 +32,16 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
 
   return (
         <Link 
-        className={`div${id} box ${orientation} ${makeActive ? "active" : "covered"}`}
+        className={`div${id} box ${orientation}
+            ${makeActive ? "active" : "covered"}
+            `}
         href={makeActive ? href : ""} 
         target='_blank'
         rel="noreferrer"
         alt={`link to ${title}`}
         style={makeActive ? {} : {"border": "1px solid #fff"}} 
         aria-disabled={makeActive ? false : true} 
-        onClick={makeActive ? console.log("This resource is active") : (e) => {
+        onClick={makeActive ? () => console.log("This resource is active") : (e) => {
           getAlert(e);return false;
         }}
         >

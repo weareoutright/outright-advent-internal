@@ -1,3 +1,4 @@
+
 import day1 from "../images/resource-thumbnails/day1.svg";
 import day2 from "../images/resource-thumbnails/day2.svg";
 import day3 from "../images/resource-thumbnails/day3.svg";
@@ -29,7 +30,7 @@ export const RESOURCES = [
     orientation: "single",
     releaseDate: "12/1/2023, 3:00:00 PM",
   },
-  {
+ {
     id: 3,
     title: "httpster",
     href: "https://httpster.net/",
