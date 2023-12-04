@@ -20,7 +20,7 @@ const Nav = ({endOfAdvent}) => {
   return (
     <>
       {
-        now >= endOfAdven ? 
+        now >= endOfAdvent ? 
         <nav className='Nav end-of-advent'>
           <p>🎁 Happy holidays and cheers to 2023! 🎉</p> 
         </nav> 
