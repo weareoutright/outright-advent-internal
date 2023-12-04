@@ -5,11 +5,11 @@ import { MARQUEE_MSGS } from '../constants/marqueeMsgs'
 
 const Header = () => {
     const now = new Date(Date.now()).valueOf()
-    const endOfAdvent = "12/22/2023, 9:00:00 AM"
+    const endOfAdvent = new Date("12/22/2023, 9:00:00 AM").valueOf()
 
   return (
     <div className='Header'>
-        <Marquee className={`Marquee ${now >= new Date(endOfAdvent).valueOf() ? "end-of-advent-marquee" : ""}`} speed={65} loop={0} pauseOnHover={true} autoFill={true}>
+        <Marquee className={`Marquee ${now >= endOfAdvent ? "end-of-advent-marquee" : ""}`} speed={65} loop={0} pauseOnHover={true} autoFill={true}>
             {MARQUEE_MSGS.map((msg, i) => {
                 return <p key={i} className="marquee-msg">{msg}</p>
             })}
