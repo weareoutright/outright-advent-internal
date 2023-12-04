@@ -11,14 +11,11 @@ const Nav = ({endOfAdvent}) => {
 
   const renderer = ({ days, hours, minutes, seconds }) =>
   <div className="timer">
-    <p>{days} days</p>
-    <p>{hours} hours</p>
-    <p>{minutes} mins</p>
-    <p>{seconds} sec</p>
+    <p>{days < 10 ? "0" : ""}{days} days</p>
+    <p>{hours < 10 ? "0" : ""}{hours} hours</p>
+    <p>{minutes < 10 ? "0" : ""}{minutes} mins</p>
+    <p>{seconds < 10 ? "0" : ""}{seconds} sec</p>
     </div>
-
-    console.log(endOfAdvent)
-    console.log(nextResource)
 
   return (
     <>

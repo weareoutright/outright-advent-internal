@@ -2,7 +2,7 @@
     background-color: $lightPink;
     width: 100svw;
     padding: .75em; 
-    font-family: $main-font;
+    font-family: $main-font !important;
     display: flex;
     justify-content: center;
     align-items: center;
