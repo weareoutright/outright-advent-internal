@@ -6,7 +6,8 @@
     display: block;
     .marquee-msg {
         margin: .25em 1em;
-        font-size: .75em;
+        font-size: 1em;
+        font-family: $main-font !important;
     }
 }
 

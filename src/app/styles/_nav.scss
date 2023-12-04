@@ -11,13 +11,16 @@
     .react-countdown-simple {
         display: flex; 
         justify-content: center;
+        font-family: $main-font !important;
         .timer {
             display: flex;
             justify-content: center;
             align-items: center;
             color: $blue;
+            font-family: $main-font !important;
             p {
                 margin: .25em 1em;
+                font-family: $main-font !important;
             }
         }
     }
