@@ -6,7 +6,7 @@ import { RESOURCES } from '../constants/resourceInfo'
 
 const Nav = ({endOfAdvent}) => {
   const now = new Date(Date.now()).valueOf()
-  const nextResource = RESOURCES.find((resource) => resource.releaseDate >= now).releaseDate
+  const nextResource = RESOURCES.find((resource) => new Date(resource.releaseDate).valueOf() >= now).releaseDate
   const nextResourceReveal = new Date(nextResource)
 
   const renderer = ({ days, hours, minutes, seconds }) =>
@@ -16,6 +16,9 @@ const Nav = ({endOfAdvent}) => {
     <p>{minutes} mins</p>
     <p>{seconds} sec</p>
     </div>
+
+    console.log(endOfAdvent)
+    console.log(nextResource)
 
   return (
     <>
