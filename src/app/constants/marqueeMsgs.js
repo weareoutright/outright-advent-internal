@@ -7,6 +7,7 @@ import Image from "next/image";
 export const MARQUEE_MSGS = [
   <Image src={STAR} alt="" key="star" />,
   <Image src={OUTRIGHT} alt="" key="outright" />,
+  "Happy Birthday, Antoine!",
   <Image src={SNOWFLAKE} height={32} width={32} alt="" key="snowflake" />,
   <Image src={LOGO} height={32} width={32} alt="" key="logo" />,
 ];
