@@ -9,7 +9,7 @@ import { MARQUEE_MSGS } from '../constants/marqueeMsgs'
 const Header = () => {
     const now = new Date(Date.now()).valueOf()
     const endOfAdvent = new Date("12/22/2023, 9:00:00 AM").valueOf()
-    const snowStart = new Date("12/11/2023, 12:00:00 AM").valueOf()
+    const snowStart = new Date("12/4/2023, 12:00:00 AM").valueOf()
 
   return (
     <div className='Header'>
