@@ -4,4 +4,4 @@
 // import LOGO from "../images/logo-ornament.svg";
 // import Image from "next/image";
 
-export const MARQUEE_MSGS = ["Happy Birthday, Antoine!"];
+export const MARQUEE_MSGS = ["It's an Outright holiday!"];
