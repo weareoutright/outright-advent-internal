@@ -20,7 +20,7 @@ const Header = () => {
           height: "100vh",
           color: "#fff"
         }}
-        snowflakeCount={200}
+        snowflakeCount={600}
       /> : null}
         <Marquee className={`Marquee ${now >= endOfAdvent ? "end-of-advent-marquee" : ""}`} speed={65} loop={0} pauseOnHover={true} autoFill={true}>
             {MARQUEE_MSGS.map((msg, i) => {
