@@ -11,6 +11,7 @@
     position: fixed;
     bottom: 0;
     object-fit: cover;
+    z-index: 10;
     .footer-brand {
         padding: 7em 5em 3em 0em;
     }
