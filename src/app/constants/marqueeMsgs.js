@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const MARQUEE_MSGS = [
   "It's an Outright holiday!",
-  <Image src={OUTRIGHT} alt="" />,
-  "To Outright: I LOVE IT HERE. Thank you for giving me the workplace environment of my dreams 😭🫂 -Dakota",
-  <Image src={OUTRIGHT} alt="" />,
+  <Image key="outright-0" src={OUTRIGHT} alt="" />,
+  "To Outright: I LOVE IT HERE and I'm so thankful to be on this team! Thank you for giving me the workplace environment of my dreams 😭🫂 -Dakota",
+  <Image key="outright-1" src={OUTRIGHT} alt="" />,
 ];
