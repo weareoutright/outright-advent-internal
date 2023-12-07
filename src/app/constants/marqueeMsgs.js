@@ -5,7 +5,7 @@ import OUTRIGHT from "../../app/Cursors_WreathHover.png";
 import Image from "next/image";
 
 export const MARQUEE_MSGS = [
-  "KEEP THAT CHANGE YA FILTHY ANIMALS",
+  "KEEP THE CHANGE YA FILTHY ANIMALS",
   <Image key="outright-0" src={OUTRIGHT} alt="" />,
   "To Outright: I LOVE IT HERE -Dakota",
   <Image key="outright-1" src={OUTRIGHT} alt="" />,
