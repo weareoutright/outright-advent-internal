@@ -49,8 +49,16 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate, visib
             getAlert(e);return false;
           }}
           > 
-            <span className={getNumColor(id)}>{id-1}</span>
-            {makeActive ? <Image src={getArrow(id)} alt=""/> : ""}
+            <div className="num-and-arrow">
+          <span className={getNumColor(id)}>{id-1}</span>
+          {makeActive ? <Image src={getArrow(id)} alt=""/> : ""}
+        </div>
+
+        {makeActive ? 
+        <div className='resource-type'>
+         <span className={getNumColor(id)} style={(getNumColor(id) === "dark-num") ? {"border": "1px solid #28225C"} : {"border": "1px solid #fff"}}>{resourceType}</span>
+        </div> : ""
+        }
           </Link>
     )
   } else {

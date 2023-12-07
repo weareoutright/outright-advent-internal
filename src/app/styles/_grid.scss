@@ -22,7 +22,37 @@
             background-position: center;
             background-size: contain;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+
+            .num-and-arrow {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .visible-title {
+                text-align: center;
+                font-size: .75em;
+                span {
+                    font-family: $main-font !important;
+                    font-weight: 500;
+                }
+            }
+
+            .resource-type {
+                text-align: right;
+                font-size: .25em;
+                
+                span {
+                    width: fit-content;
+                    font-family: $main-font !important;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    padding: .5em .75em;
+                    border-radius: 1em;
+                    letter-spacing: .25em;
+                }
+            }
         }
 
         .box:hover {
