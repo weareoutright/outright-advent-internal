@@ -5,7 +5,17 @@
     display: flex;
     flex-direction: column;
     width: 100svw;
-    img {
+
+    .snow-back {
+        position: absolute;
+        margin-top: -6em;
+    }
+
+    .snow-mid {
+        position: absolute;
+    }
+
+    .snow-front {
         width: 155%;
         object-fit: cover;
         padding-top: -2em;
@@ -14,6 +24,5 @@
     .extra-snow {
         background-color: #fff !important;
         margin-top: -1em;
-        height: .5em; // this will be an inline style that grows over time according to the timer and/or day
     }
 }
