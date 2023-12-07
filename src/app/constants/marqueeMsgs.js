@@ -9,4 +9,6 @@ export const MARQUEE_MSGS = [
   <Image key="outright-0" src={OUTRIGHT} alt="" />,
   "To Outright: I LOVE IT HERE and I'm so thankful to be on this team! Thank you for giving me the workplace environment of my dreams 😭🫂 -Dakota",
   <Image key="outright-1" src={OUTRIGHT} alt="" />,
+  "Dear Sarah: We're doing great. -Gray",
+  <Image key="outright-1" src={OUTRIGHT} alt="" />,
 ];
