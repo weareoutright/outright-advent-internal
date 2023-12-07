@@ -19,6 +19,9 @@ const Grid = () => {
                             href={resource.href}
                             orientation={resource.orientation}
                             releaseDate={resource.releaseDate}
+                            resourceImg={resource.resourceImg}
+                            visibleTitle={resource.visibleTitle}
+                            resourceType={resource.resourceType}
                         />
                     })
 }

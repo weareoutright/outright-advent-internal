@@ -6,8 +6,11 @@ import Image from 'next/image'
 import { CLICK_ALERTS } from '../constants/clickAlerts'
 import WHITE_ARROW from "../images/resource-thumbnails/white-arrow.svg"
 import DARK_ARROW from "../images/resource-thumbnails/dark-arrow.svg"
+import useWindowSize from '../helperFuncs/useWindowSize'
 
-const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
+const Resource = ({id, title, href, resourceImg, orientation, releaseDate, visibleTitle, resourceType}) => {
+    const {width} = useWindowSize();
+
     const DARK_ARROW_DIV = [3, 7, 9, 14, 15];
     const WHITE_ARROW_DIV = [2, 4, 5, 6, 8, 10, 11, 12, 13, 16, 17];
 
@@ -30,25 +33,55 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate}) => {
       return false;
     }
 
-  return (
-        <Link 
-        className={`div${id} box ${orientation}
-            ${makeActive ? "active" : "covered"}
-            `}
-        href={makeActive ? href : ""} 
-        target='_blank'
-        rel="noreferrer"
-        alt={`link to ${title}`}
-        style={makeActive ? {} : {"border": "1px solid #fff"}} 
-        aria-disabled={makeActive ? false : true} 
-        onClick={makeActive ? () => console.log("This resource is active") : (e) => {
-          getAlert(e);return false;
-        }}
-        >
+  if (width > 400) {
+    return (
+          <Link 
+          className={`div${id} box ${orientation}
+              ${makeActive ? "active" : "covered"}
+              `}
+          href={makeActive ? href : ""} 
+          target='_blank'
+          rel="noreferrer"
+          alt={`link to ${title}`}
+          style={makeActive ? {} : {"border": "1px solid #fff"}} 
+          aria-disabled={makeActive ? false : true} 
+          onClick={makeActive ? () => console.log("This resource is active") : (e) => {
+            getAlert(e);return false;
+          }}
+          > 
+            <span className={getNumColor(id)}>{id-1}</span>
+            {makeActive ? <Image src={getArrow(id)} alt=""/> : ""}
+          </Link>
+    )
+  } else {
+    return (
+      <Link 
+      className={`div${id} box ${orientation}
+          ${makeActive ? "active" : "covered"}
+          `}
+      href={makeActive ? href : ""} 
+      target='_blank'
+      rel="noreferrer"
+      alt={`link to ${title}`}
+      style={makeActive ? {} : {"border": "1px solid #fff"}} 
+      aria-disabled={makeActive ? false : true} 
+      onClick={makeActive ? () => console.log("This resource is active") : (e) => {
+        getAlert(e);return false;
+      }}
+      > 
+        <div className="num-and-arrow">
           <span className={getNumColor(id)}>{id-1}</span>
           {makeActive ? <Image src={getArrow(id)} alt=""/> : ""}
-        </Link>
-  )
+        </div>
+        <div className="visible-title">
+          {makeActive ? <span className={getNumColor(id)}>{visibleTitle}</span> : ""}
+        </div>
+        <div className='resource-type'>
+          {makeActive ? <span className={getNumColor(id)} style={(getNumColor(id) === "dark-num") ? {"border": "1px solid #28225C"} : {"border": "1px solid #fff"}}>{resourceType}</span> : ""}
+        </div>
+      </Link>
+    )
+  }
 }
 
 export default Resource
