@@ -51,6 +51,11 @@
 
         .active {
             border: none;
+            transition: all 220ms ease-in-out;
+        }
+
+        .active:hover {
+            filter: drop-shadow(3px 3px 3px #28225c83);
         }
 
         .covered {
