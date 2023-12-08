@@ -7,8 +7,10 @@ import Image from "next/image";
 export const MARQUEE_MSGS = [
   "KEEP THE CHANGE YA FILTHY ANIMALS",
   <Image key="outright-0" src={OUTRIGHT} alt="" />,
-  "To Outright: I LOVE IT HERE -Dakota",
+  "I LOVE IT HERE -Dakota",
   <Image key="outright-1" src={OUTRIGHT} alt="" />,
   "Dear Sarah: We're doing great. -Gray",
-  <Image key="outright-1" src={OUTRIGHT} alt="" />,
+  <Image key="outright-2" src={OUTRIGHT} alt="" />,
+  "Happy Hanukkah! 🕎",
+  <Image key="outright-3" src={OUTRIGHT} alt="" />,
 ];
