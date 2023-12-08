@@ -21,7 +21,7 @@ const Header = () => {
           width: "100vw",
           height: "100vh",
         }}
-        snowflakeCount={width <= 400 ? 250 : 1000}
+        snowflakeCount={width <= 450 ? 250 : 1000}
         color="white"
       /> : null}
         <Marquee className={`Marquee ${now >= endOfAdvent ? "end-of-advent-marquee" : ""}`} speed={65} loop={0} pauseOnHover={true} autoFill={true}>

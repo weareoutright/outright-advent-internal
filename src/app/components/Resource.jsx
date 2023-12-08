@@ -33,7 +33,7 @@ const Resource = ({id, title, href, resourceImg, orientation, releaseDate, visib
       return false;
     }
 
-  if (width > 400) {
+  if (width > 450) {
     return (
           <Link 
           className={`div${id} box ${orientation}
