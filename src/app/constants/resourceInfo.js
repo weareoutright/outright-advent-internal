@@ -137,7 +137,7 @@ export const RESOURCES = [
     id: 10,
     visibleTitle: "Facts",
     title: "facts",
-    href: "https://mywordle.strivemath.com/?word=svropwdomhsmlpfqpw",
+    href: "https://mywordle.strivemath.com/?word=svropwdomhsmlpfqpw", //updated
     resourceImg: day9,
     coverImg: singleGridCover,
     orientation: "single",
